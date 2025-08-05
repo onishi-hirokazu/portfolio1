@@ -1,0 +1,123 @@
+/* スライドショー関連 */
+
+#slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+#slider p{
+    width: 80%;
+    font-size: 5rem;
+    line-height: 7rem;
+    text-align: center;
+    color: #00f7ff;
+    position: absolute;
+    z-index: 1.5;
+    top: 50vh;
+    right: 10%;
+}
+
+@media screen and (min-width:420px){
+    
+}
+@media screen and (min-width:960px){
+    
+}
+
+/* main関連 */
+
+main{
+    padding: 0 30px 100px;
+}
+
+/* inview.jsでフワッとアニメーション */
+.fadein{
+    opacity: 0;
+    transform: translate(0, 50%);
+    transition: 2s;
+}
+
+.fadein.show{
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+@media screen and (min-width:420px){
+    main{
+        padding: 0 50px 120px;
+    }
+    main p, main li, main dt, main dd{
+        font-size: 2rem;
+        line-height: 4.5rem;
+    } 
+}
+@media screen and (min-width:960px){
+    main{
+        padding: 0 80px 150px;
+    }
+    main p, main li, main dt, main dd{
+        font-size: 2.5rem;
+    } 
+}
+
+/* section1関連 */
+
+
+/* section2関連 */
+
+
+/* section3関連 */
+
+
+/* section4関連 */
+.section4 dd{
+    margin-bottom: 30px;
+}
+
+/* section5関連 */
+
+.section5 dl{
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.section5 dt, .section5 dd{
+    padding: 10px 30px 10px;
+    line-height: 3rem;
+}
+
+.section5 dt{
+    background-color: #aeffae;
+    border-bottom: #00ff00 2px dotted;
+    cursor: pointer;
+}
+
+.section5 dt:nth-child(9){
+    border-bottom: #fff 1px solid;
+}
+
+.section5 dd{
+    background-color: #eaffea;
+    display: none;
+}
+
+@media screen and (min-width:420px){
+    .section5 dt, .section5 dd{
+        font-size: 2rem;
+        line-height: 4rem;
+    } 
+}
+@media screen and (min-width:960px){
+    .section5 dt, .section5 dd{
+        font-size: 2.5rem;
+        line-height: 4.5rem;
+    } 
+}
